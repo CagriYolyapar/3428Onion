@@ -1,0 +1,19 @@
+﻿Identity => Sizin icin hazır yetkilendirme ve rol sisteminin Veritabanına Microsoft tarafından dahil edilmesidir...
+Entities
+*******
+
+Microsoft.AspNetCore.Identity => Identity işlemleri icin...BUrada dikkat etmelisiniz...Core olmayan bir Identity Package'i kesinlikle referans almayın...
+Microsoft.Extension.Identity.Stores => NetCore MVC'den ve EF'ten bagımsız bir katmanda Core Identity yapısı kullanılacak ise Identity kütüphanesinin yanında Stores kütüphanesi de indirilmelidir...
+-----------------------------
+Map
+********
+Microsoft.EntityFrameworkCore => EF işlemlerinin temeli bu kütüphaneden baslar...
+Microsoft.EntityFrameworkCore.SqlServer => Core'da IEntityTypeConfiguration Interface'i icerisinde HasColumnName ve benzeri metotların gelebilmesi icin ihtiyacımız olan kütüphanedir.
+----------------------------------------
+DAL
+*******
+Microsoft.EntityFrameworkCore => EF işlemlerinin temeli
+Microsoft.EntityFrameworkCore.SqlServer => EF'in SqlServer işlemlerini yapabilmesi için
+Microsoft.EntityFrameworkCore.Tools => migration işlemlerini terminalden yapabilmek icin (terminal kodlarının anlaşılabilmesi için)
+Microsoft.AspNetCore.Identity.EntityFrameworkCore => IdentityDbContext dedigimiz yapı Identity kuallandığımız icin artık DbContext'in yerine gecmektedir...Onun gelebilmesi icin de bu kütüphanenin indirilmesi gerekir.
+Microsoft.EntityFrameworkCore.Proxies => LazyLoading ayarlamaları yapabilmek icin...

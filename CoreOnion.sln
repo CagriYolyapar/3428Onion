@@ -3,20 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.COMMON", "Project.COMMON\Project.COMMON.csproj", "{2C1BE482-CA2F-4375-9E0D-E18C17E96404}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.COMMON", "Project.COMMON\Project.COMMON.csproj", "{2C1BE482-CA2F-4375-9E0D-E18C17E96404}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.DAL", "Project.DAL\Project.DAL.csproj", "{759743D9-83A4-4E51-9F04-5D39AF559B3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.DAL", "Project.DAL\Project.DAL.csproj", "{759743D9-83A4-4E51-9F04-5D39AF559B3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.ENTITIES", "Project.ENTITIES\Project.ENTITIES.csproj", "{0045B772-2027-4CA6-AA2C-FF684A5333FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.ENTITIES", "Project.ENTITIES\Project.ENTITIES.csproj", "{0045B772-2027-4CA6-AA2C-FF684A5333FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.MAP", "Project.MAP\Project.MAP.csproj", "{A5F18459-C129-444F-8934-5A6CFE31078A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.MAP", "Project.MAP\Project.MAP.csproj", "{A5F18459-C129-444F-8934-5A6CFE31078A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCoreUI", "WebCoreUI\WebCoreUI.csproj", "{49037A1F-1B71-4798-90F1-F55A6D04DDB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCoreUI", "WebCoreUI\WebCoreUI.csproj", "{49037A1F-1B71-4798-90F1-F55A6D04DDB9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{97092BC0-031A-48DE-B324-7BEB5CF8289E}"
 	ProjectSection(SolutionItems) = preProject
 		Kutuphaneler.txt = Kutuphaneler.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.BLL", "Project.BLL\Project.BLL.csproj", "{70576F02-827A-4B88-BF10-FAA83311E43B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +46,10 @@ Global
 		{49037A1F-1B71-4798-90F1-F55A6D04DDB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49037A1F-1B71-4798-90F1-F55A6D04DDB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49037A1F-1B71-4798-90F1-F55A6D04DDB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70576F02-827A-4B88-BF10-FAA83311E43B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70576F02-827A-4B88-BF10-FAA83311E43B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70576F02-827A-4B88-BF10-FAA83311E43B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70576F02-827A-4B88-BF10-FAA83311E43B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

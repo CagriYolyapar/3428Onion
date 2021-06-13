@@ -3,13 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Project.DAL.Repositories.Abstracts
+namespace Project.BLL.ManagerServices.Abstracts
 {
-    public interface ICategoryRepository:IRepository<Category>
+    public interface IOrderManager:IManager<Order>
     {
-
-        
-
 
     }
 }

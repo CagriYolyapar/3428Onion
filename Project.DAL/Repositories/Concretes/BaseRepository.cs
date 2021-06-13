@@ -28,6 +28,9 @@ namespace Project.DAL.Repositories.Concretes
 
         public void Add(T item)
         {
+
+           
+
             _db.Set<T>().Add(item);
             Save();
         }

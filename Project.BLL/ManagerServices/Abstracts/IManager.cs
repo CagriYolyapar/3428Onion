@@ -21,7 +21,7 @@ namespace Project.BLL.ManagerServices.Abstracts
         void DeleteRange(List<T> list);
         void Destroy(T item);
         void DestroyRange(List<T> list);
-        void Update(T item);
+        string Update(T item);
         void UpdateRange(List<T> list);
 
         //Linq

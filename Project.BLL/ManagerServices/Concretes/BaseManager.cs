@@ -44,82 +44,87 @@ namespace Project.BLL.ManagerServices.Concretes
 
         public void DeleteRange(List<T> list)
         {
-            throw new NotImplementedException();
+            _iRep.DeleteRange(list);
         }
 
         public void Destroy(T item)
         {
-            throw new NotImplementedException();
+            _iRep.Destroy(item);
         }
 
         public void DestroyRange(List<T> list)
         {
-            throw new NotImplementedException();
+            _iRep.DestroyRange(list);
         }
 
         public T Find(int id)
         {
-            throw new NotImplementedException();
+            return _iRep.Find(id);
         }
 
         public T FirstOrDefault(Expression<Func<T, bool>> exp)
         {
-            throw new NotImplementedException();
+            return _iRep.FirstOrDefault(exp);
         }
 
         public List<T> GetActives()
         {
-            throw new NotImplementedException();
+            return _iRep.GetActives();
         }
 
         public List<T> GetAll()
         {
-            throw new NotImplementedException();
+            return _iRep.GetAll();
         }
 
         public T GetFirstData()
         {
-            throw new NotImplementedException();
+            return _iRep.GetFirstData();
         }
 
         public T GetLastData()
         {
-            throw new NotImplementedException();
+            return _iRep.GetLastData();
         }
 
         public List<T> GetModifieds()
         {
-            throw new NotImplementedException();
+            return _iRep.GetModifieds();
         }
 
         public List<T> GetPassives()
         {
-            throw new NotImplementedException();
+            return _iRep.GetPassives();
         }
 
         public object Select(Expression<Func<T, object>> exp)
         {
-            throw new NotImplementedException();
+            return _iRep.Select(exp);
         }
 
         public object SelectViaClass<X>(Expression<Func<T, X>> exp)
         {
-            throw new NotImplementedException();
+            return _iRep.SelectViaClass<X>(exp);
         }
 
-        public void Update(T item)
+        public string Update(T item)
         {
-            throw new NotImplementedException();
+            if (item.CreatedDate==null)
+            {
+                return "Olusturulma tarihinde sıkıntı var...Güncelleme iptal edildi";
+            }
+             _iRep.Update(item);
+            return "Güncelleme basarılı";
         }
 
         public void UpdateRange(List<T> list)
         {
-            throw new NotImplementedException();
+            _iRep.UpdateRange(list);
         }
 
         public List<T> Where(Expression<Func<T, bool>> exp)
         {
-            throw new NotImplementedException();
+            return _iRep.Where(exp);
         }
     }
 }

@@ -7,13 +7,11 @@ using System.Text;
 
 namespace Project.DAL.Repositories.Concretes
 {
-    public class CategoryRepository:BaseRepository<Category>,ICategoryRepository
+    public class OrderRepository:BaseRepository<Order>,IOrderRepository
     {
-
-        public CategoryRepository(MyContext db):base(db)
+        public OrderRepository(MyContext db):base(db)
         {
 
         }
-
     }
 }

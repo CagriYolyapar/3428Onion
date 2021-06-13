@@ -7,6 +7,5 @@ namespace Project.DAL.Repositories.Abstracts
 {
     public interface ICategoryRepository:IRepository<Category>
     {
-        //void Add(Category item)
     }
 }

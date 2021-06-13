@@ -3,10 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Project.DAL.Repositories.Concretes
+namespace Project.DAL.Repositories.Abstracts
 {
-    public class CategoryRepository
+    public interface IOrderRepository:IRepository<Order>
     {
-
     }
 }

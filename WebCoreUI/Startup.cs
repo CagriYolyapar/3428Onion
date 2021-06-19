@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Project.BLL.ServiceExtensions;
 
 namespace WebCoreUI
 {
@@ -23,8 +24,17 @@ namespace WebCoreUI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
             services.AddControllersWithViews();
-           
+            services.AddAuthentication();
+
+            #region ExtensionServices
+
+            services.AddDbContextService();
+            services.AddIdentityService();
+            services.AddRepManServices();
+
+            #endregion
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,6 +55,7 @@ namespace WebCoreUI
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

@@ -33,3 +33,10 @@ BLL
 Microsoft.AspNetCore.Identity => Identity Service Injection'i icin indirmemiz gereken kütüphane
 Microsoft.EntityFrameworkCore.SqlServer
 System.Configuration.ConfigurationManager => Mevcut calısan projenin configuration'ına baska katmanlardan ulasabilmek icin indirmemiz gereken kütüphane...
+------------------------------
+UI
+****
+
+Microsoft.EntityFrameworkCore.Design => Migration icin Tools kütüphanesini DAL'da ekleyerek ayrı bir katmanda bunu yaptığımızdan dolayı o Tools'a destek verebilmesi için UI'a bu Design kütüphanesinin indirilmesi gerekir.
+
+Microsoft.EntityFrameworkCore.SqlServer => Sql işlemlerinin yapılabilmesine olanak sağlar...
